@@ -1,0 +1,39 @@
+// Place all the styles related to the students controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#Login {
+  text-align: left;
+  height: 48em;
+
+  .form {
+
+    .login-header {
+      height: 4em;
+      background-color: red;
+
+      h3 {
+        text-align: center;
+        color: white;
+        padding-top: 0.5em;
+   }
+
+   }
+   margin-left: 30em;
+   margin-right: 30em;
+   margin-bottom: 20em;
+   background-color: white;
+   height: 25em;
+
+   .be-form {
+
+     padding-top: 1em;
+     padding-left: 10em;
+
+   }
+   }
+}
+
+.alert {
+  color: red;
+}

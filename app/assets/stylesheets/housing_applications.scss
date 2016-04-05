@@ -1,0 +1,38 @@
+// Place all the styles related to the housing_applications controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.tab {
+  padding-left:30em
+}
+
+.tab1 {
+  padding-left:60em
+}
+
+.tab2 {
+  padding-left:3em
+}
+
+.halls-tab3 {
+  padding-left:1em
+}
+
+.status-tab3 {
+  padding-left:1em
+}
+
+.space {
+  word-spacing: 5px
+}
+
+textarea {
+  resize: none;
+}
+
+.field_with_errors {
+    @extend .control-group !optional;
+    @extend .error !optional;
+
+    display: inline-block;
+}

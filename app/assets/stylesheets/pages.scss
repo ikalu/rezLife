@@ -1,0 +1,34 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#staff-list {
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 3em;
+  background-color: white;
+  height:auto;
+  width: auto;
+
+  .pics {
+    padding-top: 2em;
+
+    .c-staff {
+
+      width: 100%;
+
+      .haigler {
+        padding-left: 6em;
+      }
+
+      .leroy {
+        padding-left: 6em;
+      }
+
+      .devin {
+        margin-left: 6em;
+      }
+
+    }
+  }
+}

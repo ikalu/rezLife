@@ -1,0 +1,16 @@
+<div id="hall-detail">
+  <div class="hall">
+
+    <table>
+      <tr>
+        <th> <%= @hall.name %> </th>
+      </tr>
+      <tr>
+        <td><%= image_tag @hall.avatar.url(:medium) %></td>
+        <td> <%= @hall.info %> </td>
+      </tr>
+    </table>
+
+
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<% if current_page?(root_path) %>
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+<% elsif current_page?('/housing_applications/new') -%>
+	<ul>
+	  <% if flash.now[:alert] or flash[:notice] %>
+	    <% flash.each do |name, msg| -%>
+	      <li><%= content_tag :div, msg, class: name %></li>
+	    <% end -%>
+	    	
+	  <% end %>
+
+	  <% if !(@application.errors.empty?) %>
+	    <% @application.errors.full_messages.each do |error_message| %>
+		    <% if error_message.include?("Stud") %>
+			    <% error_message.gsub!("Stud", "You") %>
+			<% end -%>
+		      <li><p class="alert"><%= error_message %></p></li>
+	    <% end %>
+	  <% end %>
+	</ul> 
+<% end -%>

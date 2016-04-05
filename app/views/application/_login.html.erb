@@ -1,0 +1,6 @@
+<% if student_signed_in? %>
+  <h5>Welcome <%= current_student.email%></h5>
+  <%= link_to "Sign out", "/students/sign_out", method: :delete %>
+<% else %>
+  <%= link_to "Login", "/students/sign_in" %>
+<% end %>
